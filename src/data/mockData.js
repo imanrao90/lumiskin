@@ -1,0 +1,10 @@
+export const ALL_PRODUCTS = [
+  { id: '1', name: "Dermive Urea Economy Pack", price: 2250, category: "Skin Care", concern: "Dryness", rating: 5, reviews: 3, image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=600", isNew: true },
+  { id: '2', name: "Clarevo Salicylic Acid Facewash", price: 1098, category: "Skin Care", concern: "Acne", rating: 4.8, reviews: 36, image: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca4f8?auto=format&fit=crop&q=80&w=600" },
+  { id: '3', name: "Brightening Coffee Soap", price: 480, category: "Skin Care", concern: "Dark Spots", rating: 4.9, reviews: 133, image: "https://images.unsplash.com/photo-1607006344380-b6775a0824a7?auto=format&fit=crop&q=80&w=600" },
+  { id: '4', name: "Zero Hairfall Duo", price: 2466, category: "Hair Care", concern: "Haircare", rating: 5, reviews: 12, image: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&q=80&w=600" },
+  { id: '5', name: "Sun Guard SPF 50+", price: 1550, category: "Sun Protection", concern: "Protection", rating: 4.7, reviews: 89, image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=600" },
+  { id: '6', name: "Hydrating Hyaluronic Serum", price: 1850, category: "Skin Care", concern: "Dryness", rating: 4.9, reviews: 245, image: "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&q=80&w=600" },
+  { id: '7', name: "Anti-Aging Retinol Cream", price: 3200, category: "Skin Care", concern: "Aging", rating: 4.6, reviews: 56, image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=600" },
+  { id: '8', name: "Scalp Revive Treatment", price: 1200, category: "Hair Care", concern: "Haircare", rating: 4.5, reviews: 42, image: "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&q=80&w=600" },
+];

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@keyframes slide-left {
+          from { transform: translateX(100%); }
+          to { transform: translateX(0); }
+        }
+        .animate-slide-left {
+          animation: slide-left 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+.banner img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+}
+
