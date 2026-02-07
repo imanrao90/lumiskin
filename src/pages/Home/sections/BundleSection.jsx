@@ -1,8 +1,10 @@
-
-import React from 'react';
 import { ClipboardList, Calendar, ShieldCheck, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import Button from '../../../components/common/PrimaryButton';
+import PrimaryButton from '../../../components/common/PrimaryButton';
 
 const BundleSection = () => {
+  const naviagte = useNavigate()
   return (
     <section className="w-full bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 mt-12">
       <div className="flex flex-col lg:flex-row min-h-[600px]">
@@ -76,9 +78,7 @@ const BundleSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-6">
-              <button className="w-full sm:w-auto px-10 py-4 bg-slate-900 text-white text-sm font-bold tracking-widest uppercase rounded-full hover:bg-indigo-950 transition-all duration-300 transform hover:-translate-y-1 shadow-xl shadow-slate-200">
-                START MY ASSESSMENT
-              </button>
+              <PrimaryButton text="Start my assessment" onClick={() => naviagte('/skin-analysis')}/>
               <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-slate-400">
                 <span>Free for members</span>
               </div>

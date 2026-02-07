@@ -1,6 +1,8 @@
 
 import React from 'react';
 import { CheckCircle2, Sparkles, ShoppingBag, ArrowRight } from 'lucide-react';
+import Button from '../../../components/common/PrimaryButton';
+import PrimaryButton from '../../../components/common/PrimaryButton';
 
 const SkinAssessmentSection= () => {
   return (
@@ -59,15 +61,7 @@ const SkinAssessmentSection= () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-6">
-              <button className="w-full sm:w-auto px-10 py-4 bg-slate-900 text-white text-sm font-bold tracking-widest uppercase rounded-full hover:bg-blue-900 transition-all duration-300 transform hover:-translate-y-1 shadow-xl shadow-slate-200">
-                I WANT 10% OFF
-              </button>
-              <button 
-                className="group flex items-center gap-2 text-sm font-bold tracking-widest uppercase text-slate-400 hover:text-slate-900 transition-colors"
-              >
-                View Catalog
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              <PrimaryButton text="I want 10% off"/>
             </div>
           </div>
         </div>

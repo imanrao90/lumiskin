@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useAppContext } from '../../../context/AppContext';
 
 const filterOptions = {
@@ -6,6 +7,7 @@ concerns: ["Acne", "Dark Spots", "Dryness", "Aging", "Haircare"]
 };
 
 function SidebarFilters() {
+    const navigate = useNavigate()
     const {selectedCategories, setSelectedCategories, setSelectedConcerns, selectedConcerns} = useAppContext()
 
     const toggleFilter = (list, setList, item) => {
@@ -60,7 +62,7 @@ function SidebarFilters() {
                 <div className="bg-indigo-50 p-6 rounded-2xl border border-indigo-100">
                     <p className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-2">Expert Advice</p>
                     <p className="text-xs text-slate-600 leading-relaxed mb-4">Not sure which clinical formula is right for your skin type?</p>
-                    <button className="text-[10px] font-bold text-slate-900 uppercase tracking-widest border-b border-slate-900 hover:text-indigo-600 hover:border-indigo-600 transition-all">Take Skin Quiz</button>
+                    <button onClick={() => navigate('/skin-analysis')} className="text-[10px] font-bold text-slate-900 uppercase tracking-widest border-b border-slate-900 hover:text-indigo-600 hover:border-indigo-600 transition-all">Take Skin Quiz</button>
                 </div>
             </div>
         </aside>

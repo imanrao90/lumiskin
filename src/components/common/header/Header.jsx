@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import HeaderPromo from './HeaderPromo'
 import HeaderMain from './HeaderMain'
 import Navbar from './Navbar'
@@ -8,7 +8,7 @@ function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if(window.scrollY > 80) {
+      if(window.scrollY > 100) {
         setIsScrolled(true)
       } else {
         setIsScrolled(false)

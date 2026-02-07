@@ -2,7 +2,7 @@ import { X } from 'lucide-react';
 import { useAppContext } from '../../../context/AppContext';
 
 function MobileFilter() {
-    const {selectedCategories, setSelectedCategories, selectedConcerns, setSelectedConcerns, isMobileFilterOpen, setIsMobileFilterOpen} = useAppContext()
+    const {selectedCategories, setSelectedCategories, selectedConcerns, setSelectedConcerns, setIsMobileFilterOpen, isMobileFilterOpen} = useAppContext()
 
     const filterOptions = {
         categories: ["Skin Care", "Hair Care", "Sun Protection", "Bundles"],
@@ -15,8 +15,7 @@ function MobileFilter() {
 
   return (
     <div>
-    {isMobileFilterOpen && (
-        <div className="fixed inset-0 z-[100] flex justify-end">
+        {isMobileFilterOpen === true && <div className="fixed inset-0 z-[100] flex justify-end">
           <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={() => setIsMobileFilterOpen(false)} />
           <div className="relative w-[85%] max-w-sm bg-white h-full shadow-2xl flex flex-col animate-slide-left">
             <div className="p-6 border-b border-slate-100 flex justify-between items-center">
@@ -77,9 +76,8 @@ function MobileFilter() {
               </button>
             </div>
           </div>
+        </div>}
         </div>
-      )}
-      </div>
   )
 }
 

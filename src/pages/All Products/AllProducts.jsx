@@ -2,8 +2,11 @@ import SidebarFilters from './components/SidebarFilters';
 import Toolbar from './components/Toolbar';
 import ProductsGrid from './components/ProductsGrid';
 import PageHeader from '../../components/common/PageHeader';
+import { useState } from 'react';
+import { useAppContext } from '../../context/AppContext';
 
 const AllProducts = () => {
+  const {filteredProducts} = useAppContext()
 
   return (
     <div className="bg-[#fafafa] min-h-screen">
@@ -20,7 +23,7 @@ const AllProducts = () => {
             {/* Toolbar */}
             <Toolbar/>
             {/* Product Grid */}
-            <ProductsGrid/>
+            <ProductsGrid products={filteredProducts}/>
           </main>
           
         </div>
